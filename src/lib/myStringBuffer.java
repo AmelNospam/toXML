@@ -31,6 +31,11 @@ public class myStringBuffer {
 		return local_buffer;
 	}
 
+	public myStringBuffer append(myStringBuffer buf) {
+		this.buffer.append(buf.getBuffer());
+		return this;
+	}
+
 	public static StringBuffer append(StringBuffer toBuffer, StringBuffer[] buf) {
 		for (StringBuffer el : buf) {
 			toBuffer.append(el);

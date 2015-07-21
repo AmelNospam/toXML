@@ -7,6 +7,7 @@ public class testClass {
 	private int priv_val_of_int = 4;
 	public testClass2 test1;
 	public testClass2 test2 = new testClass2();
+	private int[] arrInts = new int[] {67,55,43,23};
 	
 	public testClass(){
 		

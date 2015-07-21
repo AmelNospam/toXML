@@ -1,0 +1,915 @@
+
+<xml>
+  <lib.XMLencoder>
+    <fields>
+      <field name="primitiveClasses">
+        <java.util.ArrayList>
+          <fields>
+            <field name="serialVersionUID">
+              <Value type="Long">
+                8683452581122892189
+              </Value>
+            </field>
+            <field name="DEFAULT_CAPACITY">
+              <Value type="Integer">
+                10
+              </Value>
+            </field>
+            <field name="EMPTY_ELEMENTDATA">
+              <Array of="java.lang.Object" />
+            </field>
+            <field name="DEFAULTCAPACITY_EMPTY_ELEMENTDATA">
+              <Array of="java.lang.Object" />
+            </field>
+            <field name="elementData">
+              <Array of="java.lang.Object">
+                <Element number="0">
+                  <java.lang.Class>
+                    <fields>
+                      <field name="ANNOTATION">
+                        <Value type="Integer">
+                          8192
+                        </Value>
+                      </field>
+                      <field name="ENUM">
+                        <Value type="Integer">
+                          16384
+                        </Value>
+                      </field>
+                      <field name="SYNTHETIC">
+                        <Value type="Integer">
+                          4096
+                        </Value>
+                      </field>
+                      <field name="cachedConstructor" type="String" />
+                      <field name="newInstanceCallerCache" type="String" />
+                      <field name="name">
+                        <Value type="String">
+                          java.lang.Integer
+                        </Value>
+                      </field>
+                      <field name="allPermDomain" type="String" />
+                      <field name="useCaches">
+                        <Value type="Boolean">
+                          true
+                        </Value>
+                      </field>
+                      <field name="reflectionData" type="String" />
+                      <field name="classRedefinedCount">
+                        <Value type="Integer">
+                          0
+                        </Value>
+                      </field>
+                      <field name="genericInfo" type="String" />
+                      <field name="serialVersionUID">
+                        <Value type="Long">
+                          3206093459760846163
+                        </Value>
+                      </field>
+                      <field name="serialPersistentFields">
+                        <Array of="java.io.ObjectStreamField" />
+                      </field>
+                      <field name="reflectionFactory">
+                        <sun.reflect.ReflectionFactory>
+                          <fields>
+                            <field name="initted">
+                              <Value type="Boolean">
+                                true
+                              </Value>
+                            </field>
+                            <field name="reflectionFactoryAccessPerm">
+                              <java.lang.RuntimePermission>
+                                <fields>
+                                  <field name="serialVersionUID">
+                                    <Value type="Long">
+                                      7399184964622342223
+                                    </Value>
+                                  </field>
+                                </fields>
+                              </java.lang.RuntimePermission>
+                            </field>
+                            <field name="soleInstance">
+                            <circling2 />
+                            </field>
+                            <field name="langReflectAccess">
+                              <java.lang.reflect.ReflectAccess>
+                                <fields />
+                              </java.lang.reflect.ReflectAccess>
+                            </field>
+                            <field name="noInflation">
+                              <Value type="Boolean">
+                                false
+                              </Value>
+                            </field>
+                            <field name="inflationThreshold">
+                              <Value type="Integer">
+                                15
+                              </Value>
+                            </field>
+                          </fields>
+                        </sun.reflect.ReflectionFactory>
+                      </field>
+                      <field name="initted">
+                        <Value type="Boolean">
+                          true
+                        </Value>
+                      </field>
+                      <field name="enumConstants" type="String" />
+                      <field name="enumConstantDirectory" type="String" />
+                      <field name="annotationData" type="String" />
+                      <field name="annotationType" type="String" />
+                      <field name="classValueMap" type="String" />
+                    </fields>
+                  </java.lang.Class>
+                </Element>
+                <Element number="1">
+                  <java.lang.Class>
+                    <fields>
+                      <field name="ANNOTATION">
+                        <Value type="Integer">
+                          8192
+                        </Value>
+                      </field>
+                      <field name="ENUM">
+                        <Value type="Integer">
+                          16384
+                        </Value>
+                      </field>
+                      <field name="SYNTHETIC">
+                        <Value type="Integer">
+                          4096
+                        </Value>
+                      </field>
+                      <field name="cachedConstructor" type="String" />
+                      <field name="newInstanceCallerCache" type="String" />
+                      <field name="name" type="String" />
+                      <field name="allPermDomain" type="String" />
+                      <field name="useCaches">
+                        <Value type="Boolean">
+                          true
+                        </Value>
+                      </field>
+                      <field name="reflectionData" type="String" />
+                      <field name="classRedefinedCount">
+                        <Value type="Integer">
+                          0
+                        </Value>
+                      </field>
+                      <field name="genericInfo" type="String" />
+                      <field name="serialVersionUID">
+                        <Value type="Long">
+                          3206093459760846163
+                        </Value>
+                      </field>
+                      <field name="serialPersistentFields">
+                        <Array of="java.io.ObjectStreamField" />
+                      </field>
+                      <field name="reflectionFactory">
+                        <sun.reflect.ReflectionFactory>
+                          <fields>
+                            <field name="initted">
+                              <Value type="Boolean">
+                                true
+                              </Value>
+                            </field>
+                            <field name="reflectionFactoryAccessPerm">
+                              <java.lang.RuntimePermission>
+                                <fields>
+                                  <field name="serialVersionUID">
+                                    <Value type="Long">
+                                      7399184964622342223
+                                    </Value>
+                                  </field>
+                                </fields>
+                              </java.lang.RuntimePermission>
+                            </field>
+                            <field name="soleInstance">
+                            <circling2 />
+                            </field>
+                            <field name="langReflectAccess">
+                              <java.lang.reflect.ReflectAccess>
+                                <fields />
+                              </java.lang.reflect.ReflectAccess>
+                            </field>
+                            <field name="noInflation">
+                              <Value type="Boolean">
+                                false
+                              </Value>
+                            </field>
+                            <field name="inflationThreshold">
+                              <Value type="Integer">
+                                15
+                              </Value>
+                            </field>
+                          </fields>
+                        </sun.reflect.ReflectionFactory>
+                      </field>
+                      <field name="initted">
+                        <Value type="Boolean">
+                          true
+                        </Value>
+                      </field>
+                      <field name="enumConstants" type="String" />
+                      <field name="enumConstantDirectory" type="String" />
+                      <field name="annotationData" type="String" />
+                      <field name="annotationType" type="String" />
+                      <field name="classValueMap" type="String" />
+                    </fields>
+                  </java.lang.Class>
+                </Element>
+                <Element number="2">
+                  <java.lang.Class>
+                    <fields>
+                      <field name="ANNOTATION">
+                        <Value type="Integer">
+                          8192
+                        </Value>
+                      </field>
+                      <field name="ENUM">
+                        <Value type="Integer">
+                          16384
+                        </Value>
+                      </field>
+                      <field name="SYNTHETIC">
+                        <Value type="Integer">
+                          4096
+                        </Value>
+                      </field>
+                      <field name="cachedConstructor" type="String" />
+                      <field name="newInstanceCallerCache" type="String" />
+                      <field name="name" type="String" />
+                      <field name="allPermDomain" type="String" />
+                      <field name="useCaches">
+                        <Value type="Boolean">
+                          true
+                        </Value>
+                      </field>
+                      <field name="reflectionData" type="String" />
+                      <field name="classRedefinedCount">
+                        <Value type="Integer">
+                          0
+                        </Value>
+                      </field>
+                      <field name="genericInfo" type="String" />
+                      <field name="serialVersionUID">
+                        <Value type="Long">
+                          3206093459760846163
+                        </Value>
+                      </field>
+                      <field name="serialPersistentFields">
+                        <Array of="java.io.ObjectStreamField" />
+                      </field>
+                      <field name="reflectionFactory">
+                        <sun.reflect.ReflectionFactory>
+                          <fields>
+                            <field name="initted">
+                              <Value type="Boolean">
+                                true
+                              </Value>
+                            </field>
+                            <field name="reflectionFactoryAccessPerm">
+                              <java.lang.RuntimePermission>
+                                <fields>
+                                  <field name="serialVersionUID">
+                                    <Value type="Long">
+                                      7399184964622342223
+                                    </Value>
+                                  </field>
+                                </fields>
+                              </java.lang.RuntimePermission>
+                            </field>
+                            <field name="soleInstance">
+                            <circling2 />
+                            </field>
+                            <field name="langReflectAccess">
+                              <java.lang.reflect.ReflectAccess>
+                                <fields />
+                              </java.lang.reflect.ReflectAccess>
+                            </field>
+                            <field name="noInflation">
+                              <Value type="Boolean">
+                                false
+                              </Value>
+                            </field>
+                            <field name="inflationThreshold">
+                              <Value type="Integer">
+                                15
+                              </Value>
+                            </field>
+                          </fields>
+                        </sun.reflect.ReflectionFactory>
+                      </field>
+                      <field name="initted">
+                        <Value type="Boolean">
+                          true
+                        </Value>
+                      </field>
+                      <field name="enumConstants" type="String" />
+                      <field name="enumConstantDirectory" type="String" />
+                      <field name="annotationData" type="String" />
+                      <field name="annotationType" type="String" />
+                      <field name="classValueMap" type="String" />
+                    </fields>
+                  </java.lang.Class>
+                </Element>
+                <Element number="3">
+                  <java.lang.Class>
+                    <fields>
+                      <field name="ANNOTATION">
+                        <Value type="Integer">
+                          8192
+                        </Value>
+                      </field>
+                      <field name="ENUM">
+                        <Value type="Integer">
+                          16384
+                        </Value>
+                      </field>
+                      <field name="SYNTHETIC">
+                        <Value type="Integer">
+                          4096
+                        </Value>
+                      </field>
+                      <field name="cachedConstructor" type="String" />
+                      <field name="newInstanceCallerCache" type="String" />
+                      <field name="name">
+                        <Value type="String">
+                          java.lang.Long
+                        </Value>
+                      </field>
+                      <field name="allPermDomain" type="String" />
+                      <field name="useCaches">
+                        <Value type="Boolean">
+                          true
+                        </Value>
+                      </field>
+                      <field name="reflectionData" type="String" />
+                      <field name="classRedefinedCount">
+                        <Value type="Integer">
+                          0
+                        </Value>
+                      </field>
+                      <field name="genericInfo" type="String" />
+                      <field name="serialVersionUID">
+                        <Value type="Long">
+                          3206093459760846163
+                        </Value>
+                      </field>
+                      <field name="serialPersistentFields">
+                        <Array of="java.io.ObjectStreamField" />
+                      </field>
+                      <field name="reflectionFactory">
+                        <sun.reflect.ReflectionFactory>
+                          <fields>
+                            <field name="initted">
+                              <Value type="Boolean">
+                                true
+                              </Value>
+                            </field>
+                            <field name="reflectionFactoryAccessPerm">
+                              <java.lang.RuntimePermission>
+                                <fields>
+                                  <field name="serialVersionUID">
+                                    <Value type="Long">
+                                      7399184964622342223
+                                    </Value>
+                                  </field>
+                                </fields>
+                              </java.lang.RuntimePermission>
+                            </field>
+                            <field name="soleInstance">
+                            <circling2 />
+                            </field>
+                            <field name="langReflectAccess">
+                              <java.lang.reflect.ReflectAccess>
+                                <fields />
+                              </java.lang.reflect.ReflectAccess>
+                            </field>
+                            <field name="noInflation">
+                              <Value type="Boolean">
+                                false
+                              </Value>
+                            </field>
+                            <field name="inflationThreshold">
+                              <Value type="Integer">
+                                15
+                              </Value>
+                            </field>
+                          </fields>
+                        </sun.reflect.ReflectionFactory>
+                      </field>
+                      <field name="initted">
+                        <Value type="Boolean">
+                          true
+                        </Value>
+                      </field>
+                      <field name="enumConstants" type="String" />
+                      <field name="enumConstantDirectory" type="String" />
+                      <field name="annotationData" type="String" />
+                      <field name="annotationType" type="String" />
+                      <field name="classValueMap" type="String" />
+                    </fields>
+                  </java.lang.Class>
+                </Element>
+                <Element number="4">
+                  <java.lang.Class>
+                    <fields>
+                      <field name="ANNOTATION">
+                        <Value type="Integer">
+                          8192
+                        </Value>
+                      </field>
+                      <field name="ENUM">
+                        <Value type="Integer">
+                          16384
+                        </Value>
+                      </field>
+                      <field name="SYNTHETIC">
+                        <Value type="Integer">
+                          4096
+                        </Value>
+                      </field>
+                      <field name="cachedConstructor" type="String" />
+                      <field name="newInstanceCallerCache" type="String" />
+                      <field name="name" type="String" />
+                      <field name="allPermDomain" type="String" />
+                      <field name="useCaches">
+                        <Value type="Boolean">
+                          true
+                        </Value>
+                      </field>
+                      <field name="reflectionData" type="String" />
+                      <field name="classRedefinedCount">
+                        <Value type="Integer">
+                          0
+                        </Value>
+                      </field>
+                      <field name="genericInfo" type="String" />
+                      <field name="serialVersionUID">
+                        <Value type="Long">
+                          3206093459760846163
+                        </Value>
+                      </field>
+                      <field name="serialPersistentFields">
+                        <Array of="java.io.ObjectStreamField" />
+                      </field>
+                      <field name="reflectionFactory">
+                        <sun.reflect.ReflectionFactory>
+                          <fields>
+                            <field name="initted">
+                              <Value type="Boolean">
+                                true
+                              </Value>
+                            </field>
+                            <field name="reflectionFactoryAccessPerm">
+                              <java.lang.RuntimePermission>
+                                <fields>
+                                  <field name="serialVersionUID">
+                                    <Value type="Long">
+                                      7399184964622342223
+                                    </Value>
+                                  </field>
+                                </fields>
+                              </java.lang.RuntimePermission>
+                            </field>
+                            <field name="soleInstance">
+                            <circling2 />
+                            </field>
+                            <field name="langReflectAccess">
+                              <java.lang.reflect.ReflectAccess>
+                                <fields />
+                              </java.lang.reflect.ReflectAccess>
+                            </field>
+                            <field name="noInflation">
+                              <Value type="Boolean">
+                                false
+                              </Value>
+                            </field>
+                            <field name="inflationThreshold">
+                              <Value type="Integer">
+                                15
+                              </Value>
+                            </field>
+                          </fields>
+                        </sun.reflect.ReflectionFactory>
+                      </field>
+                      <field name="initted">
+                        <Value type="Boolean">
+                          true
+                        </Value>
+                      </field>
+                      <field name="enumConstants" type="String" />
+                      <field name="enumConstantDirectory" type="String" />
+                      <field name="annotationData" type="String" />
+                      <field name="annotationType" type="String" />
+                      <field name="classValueMap" type="String" />
+                    </fields>
+                  </java.lang.Class>
+                </Element>
+                <Element number="5">
+                  <java.lang.Class>
+                    <fields>
+                      <field name="ANNOTATION">
+                        <Value type="Integer">
+                          8192
+                        </Value>
+                      </field>
+                      <field name="ENUM">
+                        <Value type="Integer">
+                          16384
+                        </Value>
+                      </field>
+                      <field name="SYNTHETIC">
+                        <Value type="Integer">
+                          4096
+                        </Value>
+                      </field>
+                      <field name="cachedConstructor" type="String" />
+                      <field name="newInstanceCallerCache" type="String" />
+                      <field name="name">
+                        <Value type="String">
+                          java.lang.String
+                        </Value>
+                      </field>
+                      <field name="allPermDomain" type="String" />
+                      <field name="useCaches">
+                        <Value type="Boolean">
+                          true
+                        </Value>
+                      </field>
+                      <field name="reflectionData" type="String" />
+                      <field name="classRedefinedCount">
+                        <Value type="Integer">
+                          0
+                        </Value>
+                      </field>
+                      <field name="genericInfo" type="String" />
+                      <field name="serialVersionUID">
+                        <Value type="Long">
+                          3206093459760846163
+                        </Value>
+                      </field>
+                      <field name="serialPersistentFields">
+                        <Array of="java.io.ObjectStreamField" />
+                      </field>
+                      <field name="reflectionFactory">
+                        <sun.reflect.ReflectionFactory>
+                          <fields>
+                            <field name="initted">
+                              <Value type="Boolean">
+                                true
+                              </Value>
+                            </field>
+                            <field name="reflectionFactoryAccessPerm">
+                              <java.lang.RuntimePermission>
+                                <fields>
+                                  <field name="serialVersionUID">
+                                    <Value type="Long">
+                                      7399184964622342223
+                                    </Value>
+                                  </field>
+                                </fields>
+                              </java.lang.RuntimePermission>
+                            </field>
+                            <field name="soleInstance">
+                            <circling2 />
+                            </field>
+                            <field name="langReflectAccess">
+                              <java.lang.reflect.ReflectAccess>
+                                <fields />
+                              </java.lang.reflect.ReflectAccess>
+                            </field>
+                            <field name="noInflation">
+                              <Value type="Boolean">
+                                false
+                              </Value>
+                            </field>
+                            <field name="inflationThreshold">
+                              <Value type="Integer">
+                                15
+                              </Value>
+                            </field>
+                          </fields>
+                        </sun.reflect.ReflectionFactory>
+                      </field>
+                      <field name="initted">
+                        <Value type="Boolean">
+                          true
+                        </Value>
+                      </field>
+                      <field name="enumConstants" type="String" />
+                      <field name="enumConstantDirectory" type="String" />
+                      <field name="annotationData" type="String" />
+                      <field name="annotationType" type="String" />
+                      <field name="classValueMap" type="String" />
+                    </fields>
+                  </java.lang.Class>
+                </Element>
+                <Element number="6">
+                  <java.lang.Class>
+                    <fields>
+                      <field name="ANNOTATION">
+                        <Value type="Integer">
+                          8192
+                        </Value>
+                      </field>
+                      <field name="ENUM">
+                        <Value type="Integer">
+                          16384
+                        </Value>
+                      </field>
+                      <field name="SYNTHETIC">
+                        <Value type="Integer">
+                          4096
+                        </Value>
+                      </field>
+                      <field name="cachedConstructor" type="String" />
+                      <field name="newInstanceCallerCache" type="String" />
+                      <field name="name">
+                        <Value type="String">
+                          java.lang.Boolean
+                        </Value>
+                      </field>
+                      <field name="allPermDomain" type="String" />
+                      <field name="useCaches">
+                        <Value type="Boolean">
+                          true
+                        </Value>
+                      </field>
+                      <field name="reflectionData" type="String" />
+                      <field name="classRedefinedCount">
+                        <Value type="Integer">
+                          0
+                        </Value>
+                      </field>
+                      <field name="genericInfo" type="String" />
+                      <field name="serialVersionUID">
+                        <Value type="Long">
+                          3206093459760846163
+                        </Value>
+                      </field>
+                      <field name="serialPersistentFields">
+                        <Array of="java.io.ObjectStreamField" />
+                      </field>
+                      <field name="reflectionFactory">
+                        <sun.reflect.ReflectionFactory>
+                          <fields>
+                            <field name="initted">
+                              <Value type="Boolean">
+                                true
+                              </Value>
+                            </field>
+                            <field name="reflectionFactoryAccessPerm">
+                              <java.lang.RuntimePermission>
+                                <fields>
+                                  <field name="serialVersionUID">
+                                    <Value type="Long">
+                                      7399184964622342223
+                                    </Value>
+                                  </field>
+                                </fields>
+                              </java.lang.RuntimePermission>
+                            </field>
+                            <field name="soleInstance">
+                            <circling2 />
+                            </field>
+                            <field name="langReflectAccess">
+                              <java.lang.reflect.ReflectAccess>
+                                <fields />
+                              </java.lang.reflect.ReflectAccess>
+                            </field>
+                            <field name="noInflation">
+                              <Value type="Boolean">
+                                false
+                              </Value>
+                            </field>
+                            <field name="inflationThreshold">
+                              <Value type="Integer">
+                                15
+                              </Value>
+                            </field>
+                          </fields>
+                        </sun.reflect.ReflectionFactory>
+                      </field>
+                      <field name="initted">
+                        <Value type="Boolean">
+                          true
+                        </Value>
+                      </field>
+                      <field name="enumConstants" type="String" />
+                      <field name="enumConstantDirectory" type="String" />
+                      <field name="annotationData" type="String" />
+                      <field name="annotationType" type="String" />
+                      <field name="classValueMap" type="String" />
+                    </fields>
+                  </java.lang.Class>
+                </Element>
+                <Element number="7">
+                  <java.lang.Class>
+                    <fields>
+                      <field name="ANNOTATION">
+                        <Value type="Integer">
+                          8192
+                        </Value>
+                      </field>
+                      <field name="ENUM">
+                        <Value type="Integer">
+                          16384
+                        </Value>
+                      </field>
+                      <field name="SYNTHETIC">
+                        <Value type="Integer">
+                          4096
+                        </Value>
+                      </field>
+                      <field name="cachedConstructor" type="String" />
+                      <field name="newInstanceCallerCache" type="String" />
+                      <field name="name" type="String" />
+                      <field name="allPermDomain" type="String" />
+                      <field name="useCaches">
+                        <Value type="Boolean">
+                          true
+                        </Value>
+                      </field>
+                      <field name="reflectionData" type="String" />
+                      <field name="classRedefinedCount">
+                        <Value type="Integer">
+                          0
+                        </Value>
+                      </field>
+                      <field name="genericInfo" type="String" />
+                      <field name="serialVersionUID">
+                        <Value type="Long">
+                          3206093459760846163
+                        </Value>
+                      </field>
+                      <field name="serialPersistentFields">
+                        <Array of="java.io.ObjectStreamField" />
+                      </field>
+                      <field name="reflectionFactory">
+                        <sun.reflect.ReflectionFactory>
+                          <fields>
+                            <field name="initted">
+                              <Value type="Boolean">
+                                true
+                              </Value>
+                            </field>
+                            <field name="reflectionFactoryAccessPerm">
+                              <java.lang.RuntimePermission>
+                                <fields>
+                                  <field name="serialVersionUID">
+                                    <Value type="Long">
+                                      7399184964622342223
+                                    </Value>
+                                  </field>
+                                </fields>
+                              </java.lang.RuntimePermission>
+                            </field>
+                            <field name="soleInstance">
+                            <circling2 />
+                            </field>
+                            <field name="langReflectAccess">
+                              <java.lang.reflect.ReflectAccess>
+                                <fields />
+                              </java.lang.reflect.ReflectAccess>
+                            </field>
+                            <field name="noInflation">
+                              <Value type="Boolean">
+                                false
+                              </Value>
+                            </field>
+                            <field name="inflationThreshold">
+                              <Value type="Integer">
+                                15
+                              </Value>
+                            </field>
+                          </fields>
+                        </sun.reflect.ReflectionFactory>
+                      </field>
+                      <field name="initted">
+                        <Value type="Boolean">
+                          true
+                        </Value>
+                      </field>
+                      <field name="enumConstants" type="String" />
+                      <field name="enumConstantDirectory" type="String" />
+                      <field name="annotationData" type="String" />
+                      <field name="annotationType" type="String" />
+                      <field name="classValueMap" type="String" />
+                    </fields>
+                  </java.lang.Class>
+                </Element>
+                <Element number="8">
+                  <java.lang.Class>
+                    <fields>
+                      <field name="ANNOTATION">
+                        <Value type="Integer">
+                          8192
+                        </Value>
+                      </field>
+                      <field name="ENUM">
+                        <Value type="Integer">
+                          16384
+                        </Value>
+                      </field>
+                      <field name="SYNTHETIC">
+                        <Value type="Integer">
+                          4096
+                        </Value>
+                      </field>
+                      <field name="cachedConstructor" type="String" />
+                      <field name="newInstanceCallerCache" type="String" />
+                      <field name="name" type="String" />
+                      <field name="allPermDomain" type="String" />
+                      <field name="useCaches">
+                        <Value type="Boolean">
+                          true
+                        </Value>
+                      </field>
+                      <field name="reflectionData" type="String" />
+                      <field name="classRedefinedCount">
+                        <Value type="Integer">
+                          0
+                        </Value>
+                      </field>
+                      <field name="genericInfo" type="String" />
+                      <field name="serialVersionUID">
+                        <Value type="Long">
+                          3206093459760846163
+                        </Value>
+                      </field>
+                      <field name="serialPersistentFields">
+                        <Array of="java.io.ObjectStreamField" />
+                      </field>
+                      <field name="reflectionFactory">
+                        <sun.reflect.ReflectionFactory>
+                          <fields>
+                            <field name="initted">
+                              <Value type="Boolean">
+                                true
+                              </Value>
+                            </field>
+                            <field name="reflectionFactoryAccessPerm">
+                              <java.lang.RuntimePermission>
+                                <fields>
+                                  <field name="serialVersionUID">
+                                    <Value type="Long">
+                                      7399184964622342223
+                                    </Value>
+                                  </field>
+                                </fields>
+                              </java.lang.RuntimePermission>
+                            </field>
+                            <field name="soleInstance">
+                            <circling2 />
+                            </field>
+                            <field name="langReflectAccess">
+                              <java.lang.reflect.ReflectAccess>
+                                <fields />
+                              </java.lang.reflect.ReflectAccess>
+                            </field>
+                            <field name="noInflation">
+                              <Value type="Boolean">
+                                false
+                              </Value>
+                            </field>
+                            <field name="inflationThreshold">
+                              <Value type="Integer">
+                                15
+                              </Value>
+                            </field>
+                          </fields>
+                        </sun.reflect.ReflectionFactory>
+                      </field>
+                      <field name="initted">
+                        <Value type="Boolean">
+                          true
+                        </Value>
+                      </field>
+                      <field name="enumConstants" type="String" />
+                      <field name="enumConstantDirectory" type="String" />
+                      <field name="annotationData" type="String" />
+                      <field name="annotationType" type="String" />
+                      <field name="classValueMap" type="String" />
+                    </fields>
+                  </java.lang.Class>
+                </Element>
+                <Element number="9" />
+              </Array>
+            </field>
+            <field name="size">
+              <Value type="Integer">
+                9
+              </Value>
+            </field>
+            <field name="MAX_ARRAY_SIZE">
+              <Value type="Integer">
+                2147483639
+              </Value>
+            </field>
+          </fields>
+        </java.util.ArrayList>
+      </field>
+    </fields>
+  </lib.XMLencoder>
+</xml>

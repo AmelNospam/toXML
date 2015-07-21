@@ -1,5 +1,6 @@
 package main;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import testClasses.testClass;
@@ -19,9 +20,9 @@ public class run {
 //		System.out.println(XMLencoder.encode(arg1, spaces));
 //		System.out.println(XMLencoder.encode(arg2, spaces));
 //		System.out.println(XMLencoder.encode(arg3, spaces));
-		XMLencoder.encode(root, arg3, 0);
-		System.out.println(root.toString(false));
-		System.out.println(root.toString(true));
+		ArrayList<Object> beenObjects = new ArrayList();
+		XMLencoder.encode(root, enc, 0, beenObjects);
+		System.out.println(root.toString());
 	}
 
 }
