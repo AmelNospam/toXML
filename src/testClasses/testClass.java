@@ -1,4 +1,5 @@
-package lib;
+package testClasses;
+
 
 public class testClass {
 	public int val_of_int = 1;

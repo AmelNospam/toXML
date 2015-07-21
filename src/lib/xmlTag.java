@@ -14,27 +14,32 @@ public class xmlTag {
 	private static StringBuffer _field = new StringBuffer("field");
 	private static StringBuffer _name = new StringBuffer("name");
 	private static StringBuffer _bullet = new StringBuffer("\"");
-	// private static StringBuffer _cr = new StringBuffer("\n");
+	private static StringBuffer _cr = new StringBuffer("\n");
 	private static StringBuffer _eq = new StringBuffer("=");
 
-	private StringBuffer spaces;
+	private int spaces;
+	private StringBuffer spacesString;
 	private StringBuffer tag;
 	private HashMap<String, StringBuffer> attrs = null;
 	private StringBuffer value = null;
 	private List<xmlTag> children = new LinkedList<xmlTag>();
 
-	public xmlTag(StringBuffer spaces, StringBuffer tag) {
+	private void renewSpacesAsString() {
+		this.spacesString = new StringBuffer("\n");
+		for (int index = 0; index < spaces; index++) {
+			spacesString.append(" ");
+		}
+	}
+
+	public xmlTag(int spaces, StringBuffer tag) {
 		this.spaces = spaces;
+		renewSpacesAsString();
 		this.tag = tag;
 	};
 
-	public xmlTag(StringBuffer spaces, String tag) {
+	public xmlTag(int spaces, String tag) {
 		this.spaces = spaces;
-		this.tag = new StringBuffer(tag);
-	};
-
-	public xmlTag(String spaces, String tag) {
-		this.spaces = new StringBuffer(spaces);
+		renewSpacesAsString();
 		this.tag = new StringBuffer(tag);
 	};
 
@@ -47,7 +52,7 @@ public class xmlTag {
 	}
 
 	public void addChild(xmlTag child) {
-		child.addSpaces("  ");
+		child.addSpaces(2);
 		this.children.add(child);
 	}
 
@@ -64,33 +69,37 @@ public class xmlTag {
 	}
 
 	public void setValue(StringBuffer value) {
-		this.value = value;
+		if (value.toString().trim() == "") {
+			this.value = null;
+		} else {
+			this.value = value;
+		}
 	}
 
 	public void setValue(String value) {
-		this.value = new StringBuffer(value);
+		if (value.trim() == "") {
+			this.value = null;
+		} else {
+			this.value = new StringBuffer(value);
+		}
 	}
 
-	public StringBuffer getSpaces() {
+	public int getSpaces() {
 		return spaces;
 	}
 
-	public void setSpaces(StringBuffer spaces) {
-		this.spaces = new StringBuffer();
-		this.spaces.append(spaces);
+	public StringBuffer getSpacesAsStringBuffer() {
+		return this.spacesString;
 	}
 
-	public void setSpaces(String spaces) {
-		this.spaces = new StringBuffer();
-		this.spaces.append(spaces);
+	public void setSpaces(int spaces) {
+		this.spaces += spaces;
+		renewSpacesAsString();
 	}
 
-	public void addSpaces(StringBuffer added_spaces) {
-		this.spaces.append(added_spaces);
-	}
-
-	public void addSpaces(String added_spaces) {
-		this.spaces.append(added_spaces);
+	public void addSpaces(int added_spaces) {
+		this.spaces += added_spaces;
+		renewSpacesAsString();
 	}
 
 	public HashMap<String, StringBuffer> getAttrs() {
@@ -103,12 +112,16 @@ public class xmlTag {
 
 	private StringBuffer attrsToStringBuffer() {
 		myStringBuffer res = new myStringBuffer();
-		if(attrs == null){return res.getBuffer();};
+		if (attrs == null) {
+			return res.getBuffer();
+		}
+		;
 		res.append(_space);
 		for (Map.Entry<String, StringBuffer> entry : attrs.entrySet()) {
 			String key = entry.getKey();
 			StringBuffer value = entry.getValue();
-			res.append(new StringBuffer[] { new StringBuffer(key), _eq, _bullet, value, _bullet });
+			res.append(new StringBuffer[] { new StringBuffer(key), _eq,
+					_bullet, value, _bullet });
 		}
 		;
 		return res.getBuffer();
@@ -118,25 +131,64 @@ public class xmlTag {
 		return attrsToStringBuffer().toString();
 	}
 
-	public StringBuffer toStringBuffer() {
+	public StringBuffer toStringBuffer(Boolean withSpaces) {
+		// System.out.println("value="+value+", tag="+tag+", children="+children);
 		myStringBuffer res = new myStringBuffer();
-		if (value == null && children == null) {
-			res.append(new StringBuffer[] { spaces, _left, tag, attrsToStringBuffer(), _space, _slash, _right });
-		} else if (children == null) {
-			res.append(new StringBuffer[] { spaces, _left, tag, attrsToStringBuffer(), _right, spaces, value,
-					spaces, _left, _slash, tag, _right });
-		} else {
-			res.append(new StringBuffer[] { spaces, _left, tag, attrsToStringBuffer(), _right, spaces});
-			for(xmlTag child: children){
-				res.append(child.toStringBuffer());
+		if (withSpaces) {
+			if (tag.equals(_value) && value == null) {
+				;
+			} else if (value == null && children.size() == 0) {
+				res.append(new StringBuffer[] { spacesString, _left, tag,
+						attrsToStringBuffer(), _space, _slash, _right });
+			} else if (children.size() == 0) {
+				// System.out.println("value="+value);
+				res.append(new StringBuffer[] {
+						spacesString,
+						_left,
+						tag,
+						attrsToStringBuffer(),
+						_right,
+						myStringBuffer.newStringBuffer(spacesString.toString() + "  "),
+						value, spacesString, _left, _slash,
+						tag, _right });
+			} else {
+				res.append(new StringBuffer[] { spacesString, _left, tag,
+						attrsToStringBuffer(), _right });
+				for (xmlTag child : children) {
+					res.append(child.toStringBuffer(withSpaces));
+				}
+				res.append(new StringBuffer[] { spacesString, _left, _slash,
+						tag, _right });
 			}
-			res.append(new StringBuffer[] {spaces, _left, _slash, tag, _right });
+		} else {
+			if (tag.equals(_value) && value == null) {
+				;
+			} else if (value == null && children.size() == 0) {
+				res.append(new StringBuffer[] { _cr, _left, tag,
+						attrsToStringBuffer(), _space, _slash, _right });
+			} else if (children.size() == 0) {
+				// System.out.println("value="+value);
+				res.append(new StringBuffer[] {
+						_left,
+						tag,
+						attrsToStringBuffer(),
+						_right,
+						value, _left, _slash,
+						tag, _right });
+			} else {
+				res.append(new StringBuffer[] { _left, tag,
+						attrsToStringBuffer(), _right });
+				for (xmlTag child : children) {
+					res.append(child.toStringBuffer(withSpaces));
+				}
+				res.append(new StringBuffer[] { _left, _slash, tag, _right });
+			}
 		}
 		return res.getBuffer();
 	}
 
-	public String toString() {
-		return toStringBuffer().toString();
+	public String toString(Boolean withSpaces) {
+		return toStringBuffer(withSpaces).toString();
 	}
 
 }

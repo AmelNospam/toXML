@@ -1,4 +1,4 @@
-package lib;
+package testClasses;
 
 public class testClass2 {
 
