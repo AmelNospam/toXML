@@ -9,7 +9,7 @@ public class xmlTag {
 	private static StringBuffer _left = new StringBuffer("<");
 	private static StringBuffer _right = new StringBuffer(">");
 	private static StringBuffer _slash = new StringBuffer("/");
-	private static StringBuffer _value = new StringBuffer("Value");
+	private static StringBuffer _value = new StringBuffer("value");
 	private static StringBuffer _space = new StringBuffer(" ");
 	private static StringBuffer _bullet = new StringBuffer("\"");
 	private static StringBuffer _cr = new StringBuffer("\n");

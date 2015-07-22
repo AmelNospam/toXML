@@ -31,7 +31,7 @@ public class XMLencoder {
 				|| primitiveClasses.contains(obj.getClass())) {
 			// this is primitive type
 			if (obj.toString() != "") {
-				xmlTag tag = new xmlTag(spaces, "Value");
+				xmlTag tag = new xmlTag(spaces, "value");
 				tag.setValue(obj);
 				toXMLobject.addChild(tag);
 			}
@@ -64,7 +64,8 @@ public class XMLencoder {
 				} else {
 //					System.out.println("encodeElement: " + obj + " - primitive? " + the_class.isPrimitive() + "("
 //							+ the_class.getName() + ")");
-					xmlTag tagClass = new xmlTag(spaces, obj.getClass().getName());
+					xmlTag tagClass = new xmlTag(spaces, "class");
+					tagClass.addAttr("name", obj.getClass().getName());
 					xmlTag tagFields = new xmlTag(spaces + 2, "fields");
 					tagClass.addChild(tagFields);
 					for (Field the_field : obj.getClass().getDeclaredFields()) {
